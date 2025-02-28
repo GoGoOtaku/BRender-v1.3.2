@@ -329,7 +329,7 @@ br_error BR_CMETHOD_DECL(br_device_pixelmap_glf, doubleBuffer)(br_device_pixelma
     }
 
     // ensure all dirty pixel writes have been flushed
-    BrPixelmapFlush(src);
+    BrPixelmapFlush((br_pixelmap *)src);
 
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
 
